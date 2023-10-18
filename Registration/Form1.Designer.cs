@@ -60,6 +60,10 @@
             textBox4 = new TextBox();
             label12 = new Label();
             textBox5 = new TextBox();
+            labelErrorEmail = new Label();
+            labelErrorPhone = new Label();
+            labelErrorAge = new Label();
+            labelErrorPassword = new Label();
             ((System.ComponentModel.ISupportInitialize)bindingSource1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
@@ -78,7 +82,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(27, 70);
+            label2.Location = new Point(27, 76);
             label2.Margin = new Padding(0, 3, 0, 3);
             label2.Name = "label2";
             label2.Size = new Size(143, 23);
@@ -100,7 +104,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(26, 234);
+            label4.Location = new Point(25, 260);
             label4.Margin = new Padding(0, 3, 0, 3);
             label4.Name = "label4";
             label4.Size = new Size(144, 23);
@@ -111,7 +115,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(25, 184);
+            label5.Location = new Point(24, 200);
             label5.Margin = new Padding(0, 3, 0, 3);
             label5.Name = "label5";
             label5.Size = new Size(145, 23);
@@ -122,7 +126,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(27, 288);
+            label6.Location = new Point(24, 319);
             label6.Margin = new Padding(0, 3, 0, 3);
             label6.Name = "label6";
             label6.Size = new Size(145, 23);
@@ -134,7 +138,7 @@
             label7.AllowDrop = true;
             label7.AutoSize = true;
             label7.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(389, 66);
+            label7.Location = new Point(439, 66);
             label7.Margin = new Padding(0, 3, 0, 3);
             label7.Name = "label7";
             label7.Size = new Size(147, 23);
@@ -146,7 +150,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.Location = new Point(389, 122);
+            label8.Location = new Point(439, 122);
             label8.Margin = new Padding(0, 3, 0, 3);
             label8.Name = "label8";
             label8.Size = new Size(147, 23);
@@ -157,7 +161,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label9.Location = new Point(389, 178);
+            label9.Location = new Point(439, 178);
             label9.Margin = new Padding(0, 3, 0, 3);
             label9.Name = "label9";
             label9.Size = new Size(147, 23);
@@ -168,7 +172,7 @@
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label10.Location = new Point(389, 234);
+            label10.Location = new Point(439, 234);
             label10.Margin = new Padding(0, 3, 0, 3);
             label10.Name = "label10";
             label10.Size = new Size(148, 23);
@@ -179,7 +183,7 @@
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label11.Location = new Point(389, 294);
+            label11.Location = new Point(439, 294);
             label11.Margin = new Padding(0, 3, 0, 3);
             label11.Name = "label11";
             label11.Size = new Size(148, 23);
@@ -189,7 +193,7 @@
             // textBox1
             // 
             textBox1.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(190, 70);
+            textBox1.Location = new Point(189, 79);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(176, 31);
             textBox1.TabIndex = 11;
@@ -197,7 +201,7 @@
             // textBox2
             // 
             textBox2.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox2.Location = new Point(190, 129);
+            textBox2.Location = new Point(191, 140);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(176, 31);
             textBox2.TabIndex = 12;
@@ -205,7 +209,7 @@
             // textBox3
             // 
             textBox3.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox3.Location = new Point(190, 234);
+            textBox3.Location = new Point(191, 260);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(176, 31);
             textBox3.TabIndex = 13;
@@ -213,7 +217,7 @@
             // textBox6
             // 
             textBox6.Font = new Font("Arial Rounded MT Bold", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox6.Location = new Point(576, 183);
+            textBox6.Location = new Point(626, 183);
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(151, 28);
             textBox6.TabIndex = 16;
@@ -221,7 +225,7 @@
             // textBox7
             // 
             textBox7.Font = new Font("Arial Rounded MT Bold", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox7.Location = new Point(576, 238);
+            textBox7.Location = new Point(626, 238);
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(151, 28);
             textBox7.TabIndex = 17;
@@ -230,7 +234,7 @@
             // textBox8
             // 
             textBox8.Font = new Font("Arial Rounded MT Bold", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox8.Location = new Point(576, 294);
+            textBox8.Location = new Point(626, 294);
             textBox8.Name = "textBox8";
             textBox8.Size = new Size(151, 28);
             textBox8.TabIndex = 18;
@@ -241,7 +245,7 @@
             comboBox1.Font = new Font("Arial Rounded MT Bold", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "Kerala", "Karnataka,", "Tamil Nadu" });
-            comboBox1.Location = new Point(576, 70);
+            comboBox1.Location = new Point(626, 70);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(151, 29);
             comboBox1.TabIndex = 20;
@@ -250,7 +254,7 @@
             // 
             radioButton1.AutoSize = true;
             radioButton1.Font = new Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            radioButton1.Location = new Point(190, 289);
+            radioButton1.Location = new Point(190, 320);
             radioButton1.Name = "radioButton1";
             radioButton1.Size = new Size(90, 24);
             radioButton1.TabIndex = 21;
@@ -262,7 +266,7 @@
             // 
             radioButton2.AutoSize = true;
             radioButton2.Font = new Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            radioButton2.Location = new Point(298, 289);
+            radioButton2.Location = new Point(286, 320);
             radioButton2.Name = "radioButton2";
             radioButton2.Size = new Size(69, 24);
             radioButton2.TabIndex = 22;
@@ -275,7 +279,7 @@
             comboBox2.Font = new Font("Arial Rounded MT Bold", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             comboBox2.FormattingEnabled = true;
             comboBox2.Items.AddRange(new object[] { "Cochin,", "Trivandrum,", "Kannur,", "Bangalore,", "Mysore,", "Ballari,", "Selam,", "Coimbatore,", "Hosur" });
-            comboBox2.Location = new Point(576, 127);
+            comboBox2.Location = new Point(626, 127);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(151, 29);
             comboBox2.TabIndex = 23;
@@ -283,7 +287,7 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(3, 479);
+            dataGridView1.Location = new Point(38, 507);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
@@ -293,7 +297,7 @@
             // button1
             // 
             button1.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.Location = new Point(110, 339);
+            button1.Location = new Point(111, 361);
             button1.Name = "button1";
             button1.Size = new Size(107, 40);
             button1.TabIndex = 25;
@@ -326,7 +330,7 @@
             // button4
             // 
             button4.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            button4.Location = new Point(474, 339);
+            button4.Location = new Point(527, 361);
             button4.Name = "button4";
             button4.Size = new Size(107, 40);
             button4.TabIndex = 28;
@@ -366,17 +370,69 @@
             // textBox5
             // 
             textBox5.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox5.Location = new Point(190, 183);
+            textBox5.Location = new Point(190, 200);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(175, 31);
             textBox5.TabIndex = 32;
+            // 
+            // labelErrorEmail
+            // 
+            labelErrorEmail.AutoSize = true;
+            labelErrorEmail.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelErrorEmail.ForeColor = Color.Red;
+            labelErrorEmail.Location = new Point(213, 174);
+            labelErrorEmail.Name = "labelErrorEmail";
+            labelErrorEmail.Size = new Size(81, 23);
+            labelErrorEmail.TabIndex = 33;
+            labelErrorEmail.Text = "label13";
+            labelErrorEmail.Visible = false;
+            // 
+            // labelErrorPhone
+            // 
+            labelErrorPhone.AutoSize = true;
+            labelErrorPhone.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelErrorPhone.ForeColor = Color.Red;
+            labelErrorPhone.Location = new Point(213, 294);
+            labelErrorPhone.Name = "labelErrorPhone";
+            labelErrorPhone.Size = new Size(81, 23);
+            labelErrorPhone.TabIndex = 34;
+            labelErrorPhone.Text = "label14";
+            labelErrorPhone.Visible = false;
+            // 
+            // labelErrorAge
+            // 
+            labelErrorAge.AutoSize = true;
+            labelErrorAge.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelErrorAge.ForeColor = Color.Red;
+            labelErrorAge.Location = new Point(213, 234);
+            labelErrorAge.Name = "labelErrorAge";
+            labelErrorAge.Size = new Size(81, 23);
+            labelErrorAge.TabIndex = 35;
+            labelErrorAge.Text = "label15";
+            labelErrorAge.Visible = false;
+            // 
+            // labelErrorPassword
+            // 
+            labelErrorPassword.AutoSize = true;
+            labelErrorPassword.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelErrorPassword.ForeColor = Color.Red;
+            labelErrorPassword.Location = new Point(652, 269);
+            labelErrorPassword.Name = "labelErrorPassword";
+            labelErrorPassword.Size = new Size(81, 23);
+            labelErrorPassword.TabIndex = 36;
+            labelErrorPassword.Text = "label16";
+            labelErrorPassword.Visible = false;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(17F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientInactiveCaption;
-            ClientSize = new Size(768, 874);
+            ClientSize = new Size(844, 1017);
+            Controls.Add(labelErrorPassword);
+            Controls.Add(labelErrorAge);
+            Controls.Add(labelErrorPhone);
+            Controls.Add(labelErrorEmail);
             Controls.Add(textBox5);
             Controls.Add(label12);
             Controls.Add(textBox4);
@@ -451,5 +507,9 @@
         private TextBox textBox4;
         private Label label12;
         private TextBox textBox5;
+        private Label labelErrorEmail;
+        private Label labelErrorPhone;
+        private Label labelErrorAge;
+        private Label labelErrorPassword;
     }
 }
